@@ -1,28 +1,25 @@
 # Read Me
-<!-- 
 
-Porject Name:
+## Project Name:
 
-Finanace Calculator
+### finance_calculators.py
 
-short description:
+## short description:
 
-a python program that allows the user to access two different financial calculators: an investment calculator and a home loan repayment calculator.
+### a python program that allows the user to access two different financial calculators: an investment calculator and a home loan repayment calculator.
 
-Table of contents:
+## Table of contents:
 
-- finance_calculators.py
+### - finance_calculators.py
 
-Installation:
+## Installation:
 
-simply download and run the folder in your code editor of choice.
+### simply download and run the folder in your code editor of choice.
 
-Usage:
+## Usage:
 
-This code relies on user input so you as the user will have to answer the questions asked
+### This code relies on user input so you as the user will have to answer the questions asked
 
-Credits:
+## Credits:
 
-https://github.com/ZeakMeadows
-
--->
+### https://github.com/ZeakMeadows
