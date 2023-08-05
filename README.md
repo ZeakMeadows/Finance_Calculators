@@ -7,10 +7,9 @@
 
 1. [Project Name](#1-project-name)
 2. [Short Description](#2-short-description)
-3. [Table of Contents](#3-table-of-contents)
-4. [Installation](#4-installation)
-5. [Usage](#5-usage)
-6. [Credits](#6-credits)
+3. [Installation](#3-installation)
+4. [Usage](#4-usage)
+5. [Credits](#5-credits)
 
 ## 1. Project Name
 
@@ -20,11 +19,7 @@ FINANCE_CALCULATORS
 
 A Python program that allows the user to access two different financial calculators: an investment calculator and a home loan repayment calculator.
 
-## 3. Table of Contents
-
-The headings and sections of this README.
-
-## 4. Installation
+## 3. Installation
 
 To get started with Finance Calculators, follow these steps:
 
@@ -33,7 +28,7 @@ To get started with Finance Calculators, follow these steps:
 3. Navigate to the project directory using your terminal or command prompt.
 4. Run the `finance_calculators.py` script by executing the following command:
 
-## 5. Usage
+## 4. Usage
 
 Finance Calculators offer two main functionalities:
 
@@ -57,6 +52,7 @@ The home loan repayment calculator helps you estimate the monthly repayments for
 4. Enter the loan term in years.
 5. The program will calculate and display the estimated monthly repayments.
 
-## 6. Credits
+## 5. Credits
 
-Credit for this project goes to [ZeakMeadows](https://github.com/ZeakMeadows). Thank you for your contributions!
+Credit for this project goes to [ZeakMeadows](https://github.com/ZeakMeadows).
+ Thank you for your contributions!
