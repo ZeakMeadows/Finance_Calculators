@@ -1,45 +1,71 @@
 import math
 
-print("Choose either 'investment' or 'bond' from the menu below to proceed:")
-print("investment - to calculate the amount of interest you'll earn on an investment")
-print("bond - to calculate the amount you'll have to pay on a home loan")
+print("choose either ‘investment’ or ‘bond’ from the menu below to proceed:")
 
-# Input for the type of calculation
+print("investment- to calculate the amount of interest you'll earn on interest")
+
+print("bond- to calculate the amount you'll have to pay on a home loan")
+
+# input for the type
+
 choice = input("Enter your choice: ")
 
-# Case 1: Investment
-if choice.lower() == 'investment':
-    # Input for investment values
-    principal_amount = float(input("Enter the principal amount: "))
-    interest_rate = float(input("Enter the rate of interest: "))
-    years = int(input("Enter the number of years: "))
-    interest_type = input("Enter the type of interest (compound/simple): ")
+# case 1 investment
 
-    # Calculate the investment amount based on the interest type
-    if interest_type.lower() == "simple":
-        investment_amount = principal_amount * (1 + interest_rate * years)
-    elif interest_type.lower() == "compound":
-        investment_amount = principal_amount * math.pow((1 + interest_rate), years)
+if choice == 'investment' or choice == "INVESTMENT" or choice == 'Investment':
+
+    # input for values
+
+    P = float(input("Enter deposit amount: "))
+
+    r = float(input("Enter the rate of interest: "))
+
+    t = int(input("Enter the number of years: "))
+
+    type_interest = input("Enter the type of interest.\ncompound\nsimple\n")
+
+    # select the type of interest
+
+    if type_interest == "simple":
+
+        A = P * (1 + r * t)
+
+    elif type_interest == "compound":
+
+        A = P * math.pow((1 + r), t)
+
     else:
-        print("Invalid type of interest selected!!!")
-        investment_amount = None
 
-    if investment_amount is not None:
-        print("The amount after", years, "years is", round(investment_amount, 2))
+        print("Invalid type for interest selected!!!")
 
-# Case 2: Bond
-elif choice.lower() == 'bond':
-    # Input for bond values
-    present_value = float(input("Enter the present value of the house: "))
-    interest_rate = float(input("Enter the rate of interest: "))
-    months = int(input("Enter the number of months for the bond: "))
+    print("The amount after", t, "years is", round(A, 2))
 
-    monthly_interest = interest_rate / 12
-    bond_repayment = (monthly_interest * present_value) / (1 - (1 + monthly_interest) ** (-months))
 
-    print("The repayment after", months, "months is", round(bond_repayment, 2))
 
-# Invalid case
+
+# case 2 bond
+
+elif choice == 'bond' or choice == "BOND" or choice == 'Bond':
+
+    # input for values
+
+    P = float(input("Enter the present value of the house: "))
+
+    r = float(input("Enter the rate of interest: "))
+
+    n = int(input("Enter the number of months for the bond: "))
+
+    i = n / 12
+
+    repayment = (i * P) / (1 - (1 + i) ** (-n))
+
+    print("The repayment after", n, "months is", round(repayment, 2))
+
+
+
+
+# invalid case
+
 else:
-    print("Invalid choice!!")
 
+    print("Invalid choice!!")
